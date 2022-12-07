@@ -1,0 +1,25 @@
+Make sure windows and firefox are up to date.
+
+
+In firefox, go to "about:preferences#privacy" and set the following settings:
+Clear Cookies and history in firefox
+Automatic updates > On
+Enhanced Tracking Protection> Strict
+Do not track> Always
+Delete Cookies on close > Checked
+Firefox will > Never Remember History
+All autofill and autologins > Disabled/unchecked
+Block pop-up windows > Checked
+Warn you when websites try to install add ons > Checked
+Under the Security Tab under "Deceptive Content..." Check all 3 settings
+Firefox Data Collection And Use > Dont allow any
+HTTPS-Only Mode - Enable in all windows
+Send websites a “Do Not Track” signal that you don’t want to be tracked > Always
+
+In Firefox, go to "about:config"
+browser.safebrowsing.enabled > true
+browser.safebrowsing.downloads.enabled > true
+browser.safebrowsing.downloads.remote.enabled > true
+browser.safebrowsing.malware.enabled > true
+
+

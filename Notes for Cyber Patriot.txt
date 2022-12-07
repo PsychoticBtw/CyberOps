@@ -1,0 +1,190 @@
+Run a system repair at the very beginning of the competition.
+
+
+***************************
+
+
+Make sure windows is updated, type in 
+open secpol.msc, go into account policies.
+
+
+***************************
+
+
+Password Policies:
+Password must meet complexity requirements > Enabled.
+Store passwords using reversible encryption > Disabled.
+
+Account Lockout Policies:
+Account lockout duration > 30 minutes
+Account lockout threshold > 10
+Reset account lockout counter after > 30 minutes
+
+Local Policies:
+User Rights Assignment:
+Guest account > disabled
+Disable Admin > rename
+
+Audit Policy:
+User Rights Assignment > Access this computer from the network - remove "everyone"
+
+
+***************************
+
+
+If RDP is a required service, then leave it on. Add a password to it, make sure alt users have passwords.
+If RDP is not a required service, go to Settings > update and security > For developers, go to remote desktop, uncheck all of them.
+Settings in sysprop:
+Allow Remote Assistance connections to this computer > Unchecked
+Dont allow Remote connections to this computer > Checked
+
+
+***************************
+
+
+If a user has a bad password, make a different password.
+Ex: CyberPatriot2022*
+If a user is supposed to be an admin but isnt, make them one.
+If a user is not supposed to be an admin but is, make them a standard user.
+
+
+***************************
+
+
+Check for updates in windows defender
+Run a quick scan
+Turn everything in smartscreen to warn
+Make sure windows defender is on
+Control Panel ‐> System and Security ‐> Action Center 
+Windows Updates 
+Install Updates Automatically 
+
+***************************
+
+
+Remove all non-business/non-workplace related media files. JPG, PNG, JPEG, MP3, MP4, AVI, MOV, ect. (Write down file names and locations that were deleted)
+*Remove everything in 3-D Folder, Picture Folder, Videos folder, Music Folder. (Write down file names and locations that were deleted)
+TURN OFF AUTOPLAY, Settings > Devices > Click AutoPlay in the lower-left side of the display. Then slide the Use AutoPlay for all media and devices toggle on or off.
+Under Choose AutoPlay Defaults, set the default action for AutoPlay when connecting each type of media or device.
+
+
+***************************
+
+
+Delete all hacking tools: Hashcat, NMAP, Wireshark, OFCRACK, Metasploit, Steam, Teamviewer (unless said), PUTTY, ITUNES, CCLEANER (unless needed).
+(Write down file names and locations that were deleted)
+
+***************************
+
+
+Show Hidden Files, folders, and drives.
+Turn off Device Discovery and device portal.
+Powershell > On
+
+
+***************************
+
+
+Computer Management > Local Users and Groups
+On every single group, always remember passwords > Disabled
+Make sure no accounts are wrongfully disabled
+
+
+***************************
+
+
+If you need to install an HIPS, install Malware Defender
+if you need to install an antivirus, use microsoft security essentials
+INSTALL FIREFOX
+
+
+***************************
+
+
+Disable Useless services:
+IIS (Internet Information Services)
+Telnet
+Web Services
+FTP (File Transfer Protocol)
+NetMeeting Remote Desktop Sharing – VoIP 
+Remote Desktop Help Session Manager 
+Remote Registry 
+Routing and Remote Access 
+Simple File Sharing 
+SSD Discovery Service 
+Universal Plug and Play Device Host 
+Windows Messenger Service
+
+
+***************************
+
+
+File and Printer Sharing ‐ off
+Remote Assistance ‐ off
+Remote Desktop ‐ off
+UPnP Framework (Universal Plug‐and‐Play) ‐off
+
+
+***************************
+
+
+Windows Firewall:
+Control Panel ‐> System and Security ‐> Windows Firewall‐>Change notification settings 
+Turn Firewall on for Home, Work, and Public 
+Select “Block all incoming connections, including those in the list of allowed programs” for both 
+Select “Notify me when Windows Firewall blocks a new program” for both 
+Control Panel ‐> System and Security ‐> Windows Firewall‐>Advanced settings 
+Allow trusted programs to connect without being blocked by adding them to your Windows Firewall 
+Exceptions list 
+For each network type, you can customize whether you want the programs allowed through  
+It’s much safer to allow only certain programs through your firewall than to open an entire port to traffic 
+Ports are numbers that identifies one side of a connection between two computers 
+Common Exceptions 
+Core Networking 
+
+
+***************************
+
+
+Control Panel ‐> Internet Options -> Security Tab 
+Security Level – High 
+-> Privacy Tab 
+Block All Cookies 
+Never allow websites to request your physical location 
+Turn on Pop‐up Blocker 
+Disable toolbars and extensions when InPrivate Browsing starts
+
+
+***************************
+
+
+Control Panel ‐> Control Panel ‐> System and Security ‐> Administrative Tools ‐> System Configuration 
+Control Panel ‐> Control Panel ‐> Administrative Tools ‐> System Configuration 
+Remove any unnecessary startup processes 
+
+
+***************************
+
+
+Task Scheduler & Task Manager:
+Check for unusual processes 
+Check for any netcat processes running 
+Lookup processes to determine whether they are legitimate: 
+www.processlibrary.com  
+
+
+***************************
+
+
+Unnecessary:
+ E.g. Spotify or other programs that decrease 
+student/worker efficiency 
+Insecure:
+ E.g. Remote Desktop Services or others than allow 
+people to access your file systems from outside the 
+organization’s networks 
+
+
+***************************
+
+
